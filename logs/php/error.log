@@ -121,3 +121,11 @@ Stack trace:
 #2 C:\Users\Owner\Local Sites\abc-university\app\public\index.php(17): require('C:\\Users\\Owner\\...')
 #3 {main}
   thrown in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\front-page.php on line 60
+[04-Dec-2024 01:28:35 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:28:35 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:30:36 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:30:36 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:32:37 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:32:37 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:34:38 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
+[04-Dec-2024 01:34:38 UTC] PHP Warning:  Undefined array key "" in C:\Users\Owner\Local Sites\abc-university\app\public\wp-content\themes\abc-university-theme\functions.php on line 19
