@@ -17,8 +17,8 @@ while (have_posts()) {
     <div class="container container--narrow page-section">
         <div class="metabox metabox--position-up metabox--with-home-link">
             <p>
-                <a class="metabox__blog-home-link" href=" <?php echo get_post_type_archive_link('event'); ?> ">
-                    <i class="fa fa-home" aria-hidden="true"></i> Events Home </a>
+                <a class="metabox__blog-home-link" href=" <?php echo get_post_type_archive_link('program'); ?> ">
+                    <i class="fa fa-home" aria-hidden="true"></i> Programs Home </a>
                 <span class="metabox__main"><?php the_title(); ?></span>
             </p>
         </div>
@@ -26,17 +26,6 @@ while (have_posts()) {
         <div class="generic-content">
             <?php the_content(); ?>
         </div>
-
-        <?php
-        $relatedPrograms = get_field('related_programs');
-
-
-
-        foreach ($relatedPrograms as $program) {
-            echo get_the_title($program);
-        }
-        ?>
-
     </div>
 
 <?php }
