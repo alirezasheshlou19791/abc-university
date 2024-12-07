@@ -26,7 +26,32 @@ while (have_posts()) {
         <div ss="generic-content"><?php the_content(); ?></div>
 
         <?php
+        $relatedProfessors = new WP_Query(array(
+            'posts_per_page' => '-1',
+            'post_type' => 'professor',
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'meta_query' => array(
+                array(
+                    'key' => 'related_programs',
+                    'compare' => 'LIKE',
+                    'value' => '"' . get_the_ID() . '"',
+                )
+            )
+        ));
 
+        if ($relatedProfessors->have_posts()) {
+            echo '<hr class="section-break">';
+            echo '<h2> ' . get_the_title() . ' Professors </h2>';
+            while ($relatedProfessors->have_posts()) {
+                $relatedProfessors->the_post(); ?>
+                <li><a href=" <?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            <?php }
+        }
+        ?>
+
+        <?php
+        wp_reset_postdata();
         $homepageEvents = new WP_Query(array(
             'posts_per_page' => '-1',
             'post_type' => 'event',
@@ -81,7 +106,6 @@ while (have_posts()) {
                     </p>
                 </div>
             </div>
-
         <?php }
         ?>
 
