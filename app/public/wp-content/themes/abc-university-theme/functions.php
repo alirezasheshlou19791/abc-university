@@ -11,6 +11,9 @@ function university_files()
 function university_features()
 {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_image_size('professorLandscape', 400, 400, true);
+    add_image_size('professorPotrait', 480, 650, true);
 }
 
 add_action('after_setup_theme', 'university_features');
@@ -41,5 +44,7 @@ function university_adjust_queries($query)
 }
 
 add_action('pre_get_posts', 'university_adjust_queries');
+
+
 
 ?>
